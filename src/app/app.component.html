@@ -10,8 +10,10 @@
   </div>
 </mat-toolbar>
 
+<!-- Principal slider -->
+
 <div class="container">
-  <swiper [config]="mainSliderOptions">
+  <swiper [config]="mainSliderOptions" id="main-swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="https://loremflickr.com/g/600/400/paris" alt="img 1"></div>
       <div class="swiper-slide"><img src="https://loremflickr.com/600/400/brazil,rio" alt="img 2"></div>
@@ -28,21 +30,40 @@
   </swiper>
 </div>
 
-<h2> Remeras </h2>
+<!-- T-shirts slides -->
 
-<swiper>
-  <div class="swiper-wrapper">
-    <div class="swiper-slide red">Slide 1</div>
-    <div class="swiper-slide red">Slide 2</div>
-    <div class="swiper-slide red">Slide 3</div>
-    <div class="swiper-slide red">Slide 4</div>
-    <div class="swiper-slide red">Slide 5</div>
-    <div class="swiper-slide red">Slide 6</div>
-    <div class="swiper-slide red">Slide 7</div>
-    <div class="swiper-slide red">Slide 8</div>
-    <div class="swiper-slide red">Slide 9</div>
-    <div class="swiper-slide red">Slide 10</div>
-  </div>
-  <!-- Add Pagination -->
-  <div class="swiper-pagination"></div>
-</swiper>
+<div class="container">
+  <h2> Remeras </h2>
+</div>
+
+<div class="container">
+  
+  <swiper [config]="clothesSlidesOptions" id="t-shirts">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <ng-container>
+          <div class="card">
+            <img src="https://loremflickr.com/600/400/paris,girl/all">
+            <h3>Producto</h3>
+          </div>
+        </ng-container>
+      </div>
+
+      <div class="swiper-slide">
+        <ng-container>
+          <div class="card">
+            <img src="https://loremflickr.com/600/400/paris">
+            <h3>Producto</h3>
+          </div>
+        </ng-container>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </swiper>
+
+</div>

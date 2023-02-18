@@ -1,20 +1,39 @@
+// Menu
 mat-toolbar {
     display: flex;
     justify-content: space-between;
 }
 
-.red {
-    background-color: red;
-    padding: 10px;
-    margin: 10px;
+// General Styles
+img { width: 100%; }
+h2 { font-size: em; }
+
+.container {
+    display: flex;
+    justify-content: center;
 }
 
-// .container {
-//     display: flex;
-//     justify-content: center;
-// }
+// Principal slider
+#main-swiper {
+    width: 100vw;
+    max-width: 1000px;
+}
 
-swiper {
-    height: 400px;
-    width: 600px;
+// T-shirts slider 
+#t-shirts {
+    width: 90vw;
+
+    .card {
+        padding: 10px 5px;
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 40em) {
+    #t-shirts {
+        width: 80vw;
+    }
 }
