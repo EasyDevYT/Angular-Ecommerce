@@ -2,3 +2,8 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// Fix horizontal scrolling in secondary sections
+.swiper-container {
+    max-width: 95vw;
+}

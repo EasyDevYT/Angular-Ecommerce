@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'ecommerce';
 
   mainSliderOptions: SwiperOptions = {
-    autoplay: true,
+    // autoplay: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true

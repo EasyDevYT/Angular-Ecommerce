@@ -13,27 +13,55 @@ h2 { font-size: em; }
     justify-content: center;
 }
 
+.card {
+    padding: 10px 5px;
+    img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+}
+
 // Principal slider
 #main-swiper {
     width: 100vw;
     max-width: 1000px;
-}
 
-// T-shirts slider 
-#t-shirts {
-    width: 90vw;
-
-    .card {
-        padding: 10px 5px;
-        img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
+    .swiper-container {
+        max-width: 100vw;
     }
 }
 
+// T-shirts slider 
+.products-section {
+    width: 90vw;
+}
+
+// Third section
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+
+    .right-side-products {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+// Responsive
 @media screen and (min-width: 40em) {
     #t-shirts {
         width: 80vw;
+    }
+
+    .grid-container {
+        grid-template-columns: 70% 30%;
+    
+        .right-side-products {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 }
