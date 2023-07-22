@@ -1,0 +1,23 @@
+footer {
+    margin-top: 150px;
+    min-height: 200px;
+    padding: 20px 30px;
+    background-color: #212121;
+
+    .footer-content {
+        display: grid;
+        text-align: center;
+         
+        grid-row-gap: 30px;
+    }
+}
+
+@media screen and (min-width:40em) {
+    footer {
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
