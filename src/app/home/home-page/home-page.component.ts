@@ -12,19 +12,6 @@ export class HomePageComponent implements OnInit {
 
   products!: Product[];
 
-  mainSliderOptions: SwiperOptions = {
-    // autoplay: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    },
-    spaceBetween: 30
-  };
-
   clothesSlidesOptions: SwiperOptions = {
     slidesPerView: 3,
     navigation: {

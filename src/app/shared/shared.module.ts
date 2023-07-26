@@ -6,11 +6,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MenuComponent } from './components/menu/menu.component';
 
 import { MaterialComponentsModule } from './material-components.module';
+import { PagePresentationComponent } from './components/page-presentation/page-presentation.component';
 
 @NgModule({
   declarations: [
     FooterComponent,
     MenuComponent,
+    PagePresentationComponent,
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { MaterialComponentsModule } from './material-components.module';
   ],
   exports: [
     MenuComponent,
-    FooterComponent
+    FooterComponent,
+    PagePresentationComponent
   ]
 })
 export class SharedModule { }

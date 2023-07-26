@@ -1,5 +1,55 @@
+@import "/src/theme-light.scss";
+
 // Menu
 mat-toolbar {
     display: flex;
     justify-content: space-between;
+    
+    z-index: 1;
+    
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    background-color: rgba(0, 0, 0, 0.342);
+    
+    .logo-container {
+        font-family: 'Noto Serif Khitan Small Script', sans-serif;
+    }
+
+    .menu-items-container {
+        font-family: 'Bad Script', cursive;
+        font-size: .9em;
+    }
+
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 40em) {
+    mat-toolbar {
+        padding: 40px 60px;
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+
+            .logo {
+                height: 1.6em;
+                margin-right: 8px;
+            }
+    
+            .brand-name {
+                font-size: 1.5em;
+            }
+        }
+
+
+        .menu-items-container {
+            font-family: 'Bad Script', cursive;
+            font-size: .9em;
+
+            .menu-item {
+                margin-left: 15px;
+            }
+        }
+
+    }
 }

@@ -15,15 +15,7 @@ h2 { font-size: em; }
     }
 }
 
-// Principal slider
-#main-swiper {
-    width: 100vw;
-    max-height: 90vh;
 
-    .swiper-container {
-        max-width: 100vw;
-    }
-}
 
 // T-shirts slider 
 .products-section {
@@ -47,6 +39,10 @@ h2 { font-size: em; }
 @media screen and (min-width: 40em) {
     #t-shirts {
         width: 80vw;
+    }
+
+    .top-image {
+        height: 80vh;
     }
 
     .grid-container {
